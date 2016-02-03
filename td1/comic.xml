@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<comic xmlns="http://miage.fr/comic">
+<!DOCTYPE comic [
+    <!ELEMENT comic (preambule, cases)>
+    <!ELEMENT preambule (date, auteur+, personnages+)>
+    <!ATTLIST preambule
+            nombreCases CDATA #REQUIRED>
+    <!ELEMENT date (#PCDATA)>
+    <!ELEMENT auteur (site*, email*)>
+    <!ATTLIST auteur
+            prenom CDATA #REQUIRED
+            nom CDATA #REQUIRED>
+    <!ELEMENT site (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT personnages (personnage+)>
+    <!ATTLIST personnages
+            nombre CDATA #IMPLIED>
+    <!ELEMENT personnage (#PCDATA)>
+    <!ELEMENT cases (case+)>
+    <!ELEMENT case (personnagesVisibles, bulles*)>
+    <!ELEMENT personnagesVisibles (personnage*)>
+    <!ELEMENT bulles (bulle*)>
+    <!ELEMENT bulle (personnage, contenu)>
+    <!ELEMENT contenu (#PCDATA)>
+]>
+
+<comic>
 
     <preambule nombreCases="3">
         <!-- Je n'ai pas mis la date en attibut car il peut y avoir plusieurs dates
