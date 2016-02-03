@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<livre xmlns="http://miage.fr/livre">
+    <!-- Structure avec Sections, Chapitres et Paragraphes -->
+    <structure>
+        <section name="section1">
+            <chapitre name="chapitre1">
+                <paragraphe>
+
+                </paragraphe>
+                <paragraphe>
+
+                </paragraphe>
+            </chapitre>
+            <chapitre name="chapitre2">
+                <paragraphe>
+
+                </paragraphe>
+                <paragraphe>
+
+                </paragraphe>
+            </chapitre>
+        </section>
+        <section xmlns="http://www.w3schools.com/furniture" name="section2">
+            <chapitre name="chapitre3">
+                <paragraphe>
+
+                </paragraphe>
+                <paragraphe>
+
+                </paragraphe>
+            </chapitre>
+            <chapitre name="chapitre4">
+                <paragraphe>
+
+                </paragraphe>
+                <paragraphe>
+
+                </paragraphe>
+            </chapitre>
+        </section>
+    </structure>
+
+    <!-- Un livre contient la liste des auteurs -->
+    <auteurs>
+        <auteur>
+            <nom>BLAISE</nom>
+            <prenom>Maxime</prenom>
+        </auteur>
+        <auteur>
+            <nom>NOSAL</nom>
+            <prenom>Antoine</prenom>
+        </auteur>
+    </auteurs>
+</livre>
