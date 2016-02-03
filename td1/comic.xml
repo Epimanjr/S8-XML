@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<comic xmlns="http://miage.fr/comic">
+
+    <preambule nombreCases="3">
+        <!-- Je n'ai pas mis la date en attibut car il peut y avoir plusieurs dates
+            Date sortie, date réédition, etc...
+        -->
+        <date>2-16-2015</date>
+        <auteur prenom="Scott" nom="Adams">
+            <site>Dilbert.com</site>
+            <email>DilbertCartoonist@gmail.com</email>
+        </auteur>
+        <personnages nombre="2">
+            <personnage>Dilbert</personnage>
+            <personnage>Tina</personnage>
+        </personnages>
+    </preambule>
+
+    <cases>
+        <case>
+            <personnagesVisibles>
+                <personnage>Dilbert</personnage>
+            </personnagesVisibles>
+            <bulles>
+                <bulle>
+                    <personnage>Dilbert</personnage>
+                    <contenu>
+                        <![CDATA[
+                        YAY! I HAVE ANOTHER FULL DAY OF DOING NOTHING BUT REARRANGING ZEROS AND ONE
+                        ]]>
+                    </contenu>
+                </bulle>
+            </bulles>
+        </case>
+        <case>
+            <personnagesVisibles>
+                <personnage>Dilbert</personnage>
+            </personnagesVisibles>
+            <bulles>
+                <bulle>
+                    <personnage>Dilbert</personnage>
+                    <contenu>
+                        <![CDATA[
+                        YOU KNOW IT WILL BE A GOOD DAY WHEN THERE IS NO HUMAN INTERACTION ON THE SCHEDULE
+                        ]]>
+                    </contenu>
+                </bulle>
+            </bulles>
+        </case>
+        <case>
+            <personnagesVisibles>
+                <personnage>Dilbert</personnage>
+                <personnage>Tina</personnage>
+            </personnagesVisibles>
+            <bulles>
+                <bulle>
+                    <personnage>Dilbert</personnage>
+                    <contenu>
+                        <![CDATA[
+                        WELL, IT STARTED GOOD
+                        ]]>
+                    </contenu>
+                </bulle>
+                <bulle>
+                    <personnage>Tina</personnage>
+                    <contenu>
+                        <![CDATA[
+                        HOW'S YOUR DAY GOING?
+                        ]]>
+                    </contenu>
+                </bulle>
+            </bulles>
+        </case>
+    </cases>
+</comic>
