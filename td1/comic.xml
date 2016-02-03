@@ -16,6 +16,9 @@
     <!ATTLIST personnages
             nombre CDATA #IMPLIED>
     <!ELEMENT personnage (#PCDATA)>
+    <!ATTLIST personnage
+            nom ID #IMPLIED
+            ref IDREF #IMPLIED>
     <!ELEMENT cases (case+)>
     <!ELEMENT case (personnagesVisibles, bulles*)>
     <!ELEMENT personnagesVisibles (personnage*)>
@@ -36,19 +39,19 @@
             <email>DilbertCartoonist@gmail.com</email>
         </auteur>
         <personnages nombre="2">
-            <personnage>Dilbert</personnage>
-            <personnage>Tina</personnage>
+            <personnage nom="Dilbert" />
+            <personnage nom="Tina" />
         </personnages>
     </preambule>
 
     <cases>
         <case>
             <personnagesVisibles>
-                <personnage>Dilbert</personnage>
+                <personnage ref="Dilbert" />
             </personnagesVisibles>
             <bulles>
                 <bulle>
-                    <personnage>Dilbert</personnage>
+                    <personnage ref="Dilbert" />
                     <contenu>
                         <![CDATA[
                         YAY! I HAVE ANOTHER FULL DAY OF DOING NOTHING BUT REARRANGING ZEROS AND ONE
@@ -59,11 +62,11 @@
         </case>
         <case>
             <personnagesVisibles>
-                <personnage>Dilbert</personnage>
+                <personnage ref="Dilbert" />
             </personnagesVisibles>
             <bulles>
                 <bulle>
-                    <personnage>Dilbert</personnage>
+                    <personnage ref="Dilbert" />
                     <contenu>
                         <![CDATA[
                         YOU KNOW IT WILL BE A GOOD DAY WHEN THERE IS NO HUMAN INTERACTION ON THE SCHEDULE
@@ -74,12 +77,12 @@
         </case>
         <case>
             <personnagesVisibles>
-                <personnage>Dilbert</personnage>
-                <personnage>Tina</personnage>
+                <personnage ref="Dilbert" />
+                <personnage ref="Tina" />
             </personnagesVisibles>
             <bulles>
                 <bulle>
-                    <personnage>Dilbert</personnage>
+                    <personnage ref="Dilbert" />
                     <contenu>
                         <![CDATA[
                         WELL, IT STARTED GOOD
@@ -87,7 +90,7 @@
                     </contenu>
                 </bulle>
                 <bulle>
-                    <personnage>Tina</personnage>
+                    <personnage ref="Tina" />
                     <contenu>
                         <![CDATA[
                         HOW'S YOUR DAY GOING?
