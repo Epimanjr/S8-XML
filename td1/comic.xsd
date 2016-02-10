@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="comic">
+    <xs:complexType>
+        <xs:sequence>
+            <!-- Element complexe pour le preambule -->
+            <xs:element name="preambule">
+                <xs:complexType>
+                    <xs:sequence>
+                        <!-- Element simple pour la date -->
+                        <xs:element name="date" type="xs:date" />
+                        <!-- Element complexe pour l'auteur -->
+                        <xs:element name="auteur">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <!-- Element simple contenu dans auteur -->
+                                    <xs:element name="site" type="xs:string" />
+                                    <xs:element name="email" type="xs:string" />
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <!-- Element pour les personnages -->
+                        <!-- [...] -->
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+</xs:schema>

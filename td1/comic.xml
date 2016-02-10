@@ -27,7 +27,7 @@
     <!ELEMENT contenu (#PCDATA)>
 ]>
 
-<comic>
+<comic xsi:noNamespaceSchemaLocation="comic.xsd">
 
     <preambule nombreCases="3">
         <!-- Je n'ai pas mis la date en attibut car il peut y avoir plusieurs dates
